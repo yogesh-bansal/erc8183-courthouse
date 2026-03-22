@@ -1,0 +1,22 @@
+{
+  "jobId": 0,
+  "deliverableHash": "0x7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b",
+  "analysis": {
+    "summary": "Comprehensive analysis of Ethereum L2 scaling solutions",
+    "findings": [
+      "Optimistic rollups dominate TVL with $18B across Arbitrum and Optimism",
+      "ZK rollups are catching up, with zkSync and StarkNet gaining market share",
+      "Blob-based data availability (EIP-4844) reduced L2 costs by 90%",
+      "Cross-rollup interoperability remains the key unsolved challenge",
+      "Base (Coinbase L2) shows fastest user growth at 15M monthly actives"
+    ],
+    "confidence": 0.88
+  },
+  "storageUrl": "https://pastebin.0000402.xyz/p/demo-001",
+  "providerCost": "$0.03 (3 x402 service calls)",
+  "x402ServicesUsed": [
+    { "service": "x402-proxy", "cost": "$0.01", "purpose": "Fetch research papers" },
+    { "service": "x402-llm-bot", "cost": "$0.01", "purpose": "Generate structured analysis" },
+    { "service": "x402-pastebin", "cost": "$0.01", "purpose": "Store deliverable" }
+  ]
+}

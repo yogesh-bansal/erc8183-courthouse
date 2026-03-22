@@ -1,0 +1,17 @@
+{
+  "name": "erc8183-courthouse",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Trustless agent job marketplace on ERC-8183 Agentic Commerce Protocol",
+  "scripts": {
+    "demo": "node src/demo.mjs",
+    "client": "node src/client-agent.mjs",
+    "provider": "node src/provider-agent.mjs",
+    "evaluator": "node src/evaluator-agent.mjs"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "serve": "^14.2.4",
+    "viem": "2.47.4"
+  }
+}

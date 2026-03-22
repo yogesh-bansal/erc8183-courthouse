@@ -1,0 +1,40 @@
+{
+  "_note": "Fill this with real repo, deploy, and publishing links before submitting. Keep the metadata honest and replace placeholder fields only with values you actually used.",
+  "name": "ERC-8183 Courthouse",
+  "description": "Multi-agent job coordination system built on the Agentic Commerce Protocol (ERC-8183). Three agents — Client, Provider, and Evaluator — coordinate through on-chain USDC escrow to manage the full job lifecycle. Includes a ReputationHook (IACPHook) that tracks provider performance across jobs.",
+  "problemStatement": "AI agents can generate value, but there is no trustless standard for them to hire each other. Without escrow, quality checks, or reputation tracking, every agent-to-agent payment is a bespoke integration built on trust. ERC-8183 Courthouse demonstrates how the Agentic Commerce Protocol enables coordinated agent work with on-chain escrow, independent evaluation, and reputation scoring.",
+  "repoURL": "REPLACE_WITH_PUBLIC_GITHUB_REPO_URL",
+  "trackUUIDs": [
+    "49c3d90b1f084c44a3585231dc733f83",
+    "fdb76d08812b43f6a5f454744b66f590"
+  ],
+  "conversationLog": "See conversationLog.md in this folder. Paste the full contents into the submission field.",
+  "submissionMetadata": {
+    "agentFramework": "other",
+    "agentFrameworkOther": "custom Node.js multi-agent system with viem",
+    "agentHarness": "codex-cli",
+    "model": "claude-opus-4-6",
+    "skills": [
+      "REPLACE_WITH_ACTUAL_LOADED_SKILL_ID"
+    ],
+    "tools": [
+      "viem",
+      "Solidity (OpenZeppelin v5)",
+      "Hardhat",
+      "Node.js"
+    ],
+    "helpfulResources": [
+      "https://github.com/paxthemax/erc-8183",
+      "https://eips.ethereum.org/EIPS/eip-8183",
+      "https://viem.sh/docs/chains/base"
+    ],
+    "helpfulSkills": [],
+    "intention": "continuing",
+    "intentionNotes": "Designed to evolve into a full agent marketplace with web dashboard, dispute resolution, multi-evaluator consensus, job templates, and provider staking.",
+    "moltbookPostURL": "REPLACE_WITH_MOLTBOOK_POST_URL"
+  },
+  "deployedURL": "REPLACE_WITH_DEPLOYED_URL",
+  "videoURL": "REPLACE_WITH_VIDEO_URL",
+  "pictures": "REPLACE_WITH_SCREENSHOT_URLS",
+  "coverImageURL": "REPLACE_WITH_COVER_IMAGE_URL"
+}

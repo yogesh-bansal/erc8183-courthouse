@@ -1,0 +1,51 @@
+{
+  "name": "ERC-8183 Courthouse",
+  "description": "Multi-agent job marketplace built on the Agentic Commerce Protocol (ERC-8183). Three autonomous agents — Client, Provider, and Evaluator — coordinate through on-chain USDC escrow to post, execute, judge, and pay for work. Includes a ReputationHook that tracks provider performance.",
+  "version": "1.0.0",
+  "author": "Omniacs DAO",
+  "chain": {
+    "name": "Base",
+    "id": 8453,
+    "rpc": "https://mainnet.base.org"
+  },
+  "contracts": {
+    "AgenticCommerce": {
+      "description": "ERC-8183 reference implementation with USDC escrow, configurable fees, and hook support"
+    },
+    "ReputationHook": {
+      "description": "IACPHook implementation that tracks provider reputation (completed, rejected, score 0-100)"
+    }
+  },
+  "agents": [
+    {
+      "name": "Client Agent",
+      "role": "Posts jobs with descriptions and budgets, funds escrow, monitors completion"
+    },
+    {
+      "name": "Provider Agent",
+      "role": "Discovers open jobs, executes work via x402 services, submits deliverable hashes"
+    },
+    {
+      "name": "Evaluator Agent",
+      "role": "Reviews deliverables, runs quality checks, approves or rejects with reason hashes"
+    }
+  ],
+  "capabilities": [
+    "Create and fund jobs via ERC-8183 escrow",
+    "Discover and claim open jobs autonomously",
+    "Execute work using x402 services (LLM, proxy, pastebin)",
+    "Evaluate deliverable quality with heuristic scoring",
+    "Track provider reputation via IACPHook",
+    "Distribute payment with platform and evaluator fees"
+  ],
+  "tracks": [
+    {
+      "name": "ERC-8183 Open Build — Best Overall",
+      "prize": "$2,000"
+    },
+    {
+      "name": "Synthesis Open Track",
+      "prize": "$19,559"
+    }
+  ]
+}

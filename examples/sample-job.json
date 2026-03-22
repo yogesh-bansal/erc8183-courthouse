@@ -1,0 +1,25 @@
+{
+  "jobId": 0,
+  "client": "0xC11E4700000000000000000000000000000000001",
+  "provider": "0xP407D300000000000000000000000000000000002",
+  "evaluator": "0xE7A10800000000000000000000000000000000003",
+  "description": "Analyze the current state of Ethereum L2 scaling solutions",
+  "budget": "500000",
+  "budgetFormatted": "0.50 USDC",
+  "expiredAt": "2026-03-17T01:00:00Z",
+  "status": "Completed",
+  "hook": "0xREPUTATION_HOOK_ADDRESS",
+  "lifecycle": [
+    { "status": "Open", "timestamp": "2026-03-17T00:00:00Z", "action": "createJob()" },
+    { "status": "Open", "timestamp": "2026-03-17T00:01:00Z", "action": "setProvider()" },
+    { "status": "Open", "timestamp": "2026-03-17T00:02:00Z", "action": "setBudget(0.50 USDC)" },
+    { "status": "Funded", "timestamp": "2026-03-17T00:03:00Z", "action": "fund()" },
+    { "status": "Submitted", "timestamp": "2026-03-17T00:10:00Z", "action": "submit(0xabc...)" },
+    { "status": "Completed", "timestamp": "2026-03-17T00:12:00Z", "action": "complete(0xdef...)" }
+  ],
+  "payment": {
+    "provider": "0.4625 USDC",
+    "evaluator": "0.0250 USDC",
+    "platform": "0.0125 USDC"
+  }
+}

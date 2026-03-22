@@ -1,0 +1,25 @@
+{
+  "jobId": 0,
+  "evaluator": "0xE7A10800000000000000000000000000000000003",
+  "score": 10,
+  "maxScore": 10,
+  "pass": true,
+  "checks": {
+    "hasSummary": true,
+    "hasFindings": true,
+    "hasConfidence": true,
+    "hasStorage": true,
+    "relevantToJob": true
+  },
+  "reason": "Deliverable meets quality bar (10/10). 5/5 checks passed.",
+  "reasonHash": "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+  "action": "complete",
+  "providerReputation": {
+    "completed": 1,
+    "rejected": 0,
+    "totalEarned": "462500",
+    "totalEarnedFormatted": "0.4625 USDC",
+    "lastActiveAt": "2026-03-17T00:12:00Z",
+    "score": 100
+  }
+}

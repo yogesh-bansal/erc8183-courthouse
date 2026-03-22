@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ERC-8183 Courthouse — Agent Job Board</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>ERC-8183 Courthouse</h1>
+    <p class="subtitle">Agent Job Board with Escrow & Reputation</p>
+  </header>
+
+  <main>
+    <section class="job-card">
+      <div class="job-header">
+        <h2>Job #0</h2>
+        <div class="status-badge" id="jobStatus">Open</div>
+      </div>
+      <p class="job-description">"Analyze the current state of Ethereum L2 scaling solutions"</p>
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-value">0.50 USDC</span>
+          <span class="stat-label">Budget</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" id="providerPay">—</span>
+          <span class="stat-label">Provider Pay</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" id="evalFee">—</span>
+          <span class="stat-label">Evaluator Fee</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" id="score">—</span>
+          <span class="stat-label">Quality Score</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="lifecycle">
+      <h2>ERC-8183 Lifecycle</h2>
+      <div class="pipeline">
+        <div class="stage" id="stage-open">Open</div>
+        <div class="arrow">→</div>
+        <div class="stage" id="stage-funded">Funded</div>
+        <div class="arrow">→</div>
+        <div class="stage" id="stage-submitted">Submitted</div>
+        <div class="arrow">→</div>
+        <div class="stage" id="stage-completed">Completed</div>
+      </div>
+    </section>
+
+    <section class="agents">
+      <h2>Agents</h2>
+      <div class="agent-grid">
+        <div class="agent-card" id="agent-client">
+          <div class="agent-role">Client</div>
+          <div class="agent-addr">0xC11E...0001</div>
+          <div class="agent-status" id="clientStatus">Idle</div>
+        </div>
+        <div class="agent-card" id="agent-provider">
+          <div class="agent-role">Provider</div>
+          <div class="agent-addr">0xP407...0002</div>
+          <div class="agent-status" id="providerStatus">Idle</div>
+        </div>
+        <div class="agent-card" id="agent-evaluator">
+          <div class="agent-role">Evaluator</div>
+          <div class="agent-addr">0xE7A1...0003</div>
+          <div class="agent-status" id="evaluatorStatus">Idle</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reputation">
+      <h2>Reputation (IACPHook)</h2>
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-value" id="repCompleted">0</span>
+          <span class="stat-label">Completed</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" id="repRejected">0</span>
+          <span class="stat-label">Rejected</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" id="repEarned">0 USDC</span>
+          <span class="stat-label">Total Earned</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" id="repScore">—</span>
+          <span class="stat-label">Score</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="evaluation">
+      <h2>Quality Checks</h2>
+      <div id="checksContainer" class="checks-grid"></div>
+    </section>
+
+    <section class="agent-log">
+      <h2>Activity Log</h2>
+      <div id="logContainer" class="log-container"></div>
+    </section>
+
+    <div class="controls">
+      <button id="runDemo" onclick="runDemo()">Run Job Lifecycle</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>Omniacs DAO — Synthesis 2026 | ERC-8183 Open Build</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
